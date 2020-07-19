@@ -1,0 +1,7 @@
+<nav id="sidebar" class="navbar-dark bg-dark" [ngClass]="{'hidden': !sideNavService.isSideBadOpen }">
+  <ul class="navbar-nav">
+    <li class="nav-item active" *ngFor="let page of pages">
+      <a class="nav-link" routerLink="/{{page.location}}">{{page.title}}</a>
+    </li>
+  </ul>
+</nav>
