@@ -8,27 +8,4 @@ import {Page} from "./page";
 })
 export class AppComponent {
   title = 'myWebSite';
-
-  pages: Page[] = [
-    {
-      title: 'Home',
-      location: ''
-    },
-    {
-      title: 'Projects',
-      location: 'projects'
-    },
-    {
-      title: 'Education',
-      location: 'education'
-    },
-    {
-      title: 'Achievements',
-      location: 'achievements'
-    },
-    {
-      title: 'Contact',
-      location: 'contactInfo'
-    }
-  ]
 }

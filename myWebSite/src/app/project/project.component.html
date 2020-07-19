@@ -1,5 +1,10 @@
-<ul>
-  <li *ngFor="let project of projects">
-    <a class="card-link" routerLink="/project/{{project.id}}" ><span class="text-capitalize">{{project.name}}</span></a>
-  </li>
-</ul>
+<div class="dashboard-cards">
+  <div class="card" style="width: 18rem;" *ngFor="let project of projects">
+    <div class="card-body">
+      <h5 class="card-title">{{project.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{project.roles}}</h6>
+      <p class="card-text">{{project.description}}</p>
+      <a class="card-link" routerLink="/project/{{project.id}}">View Details</a>
+    </div>
+  </div>
+</div>

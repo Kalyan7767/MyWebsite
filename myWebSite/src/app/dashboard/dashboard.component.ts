@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ProjectService} from "../project.service";
 import {Project} from "../project";
 
 @Component({
@@ -11,15 +10,8 @@ export class DashboardComponent implements OnInit {
 
   projects: Project[];
 
-  constructor(private projectService: ProjectService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getProjects();
   }
-
-  getProjects() {
-    this.projectService.getProjects()
-      .subscribe(projects => this.projects = projects);
-  }
-
 }
