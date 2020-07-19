@@ -1,3 +1,16 @@
 
-<h1> Welcome to My website </h1>
-<app-project></app-project>
+<h1 class="modal-header"> Welcome to My website </h1>
+<nav class="card">
+  <table class="table-responsive">
+    <thead class="table">
+    <tr>
+      <th *ngFor="let page of pages">
+        <a class="card-link" routerLink="/{{page.location}}">{{page.title}}</a>
+      </th>
+    </tr>
+    </thead>
+  </table>
+
+
+</nav>
+<router-outlet></router-outlet>

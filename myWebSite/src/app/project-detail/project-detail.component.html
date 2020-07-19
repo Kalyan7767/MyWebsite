@@ -1,1 +1,5 @@
-<h4>This is the project detail page</h4>
+<div *ngIf="project">
+  <h3 class="text-capitalize">{{project.name}}</h3>
+  <h4>{{project.description}}</h4>
+  <h4>{{project.roles}}</h4>
+</div>

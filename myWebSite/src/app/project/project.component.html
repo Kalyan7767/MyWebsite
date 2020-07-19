@@ -1,3 +1,5 @@
-
-<h3>This is the project page</h3>
-<app-project-detail></app-project-detail>
+<ul>
+  <li *ngFor="let project of projects">
+    <a class="card-link" routerLink="/project/{{project.id}}" ><span class="text-capitalize">{{project.name}}</span></a>
+  </li>
+</ul>
